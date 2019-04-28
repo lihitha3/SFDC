@@ -9,6 +9,7 @@ public class AccountTgrHandler {
     }
     
     public void beforeUpdate(Map<Id,Account> newMap , Map<Id,Account> oldMap){
+        
         for(Id key : newMap.keyset()){
            // New Account
            Account new_account = newMap.get(key);
